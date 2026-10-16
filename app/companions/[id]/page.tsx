@@ -1,0 +1,13 @@
+import { Button } from "@/components/ui/button"
+import React from 'react'
+
+const CompanionSession = () => {
+  return (
+    <div>
+        <h1 className="text-2xl underline">Welcome to my SaaS App</h1>
+      <Button>Press Me</Button>
+    </div>
+  )
+}
+
+export default CompanionSession
