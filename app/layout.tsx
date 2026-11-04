@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Suspense } from "react";
+import { Analytics } from "@vercel/analytics/next";
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const bricolage = Bricolage_Grotesque({
@@ -28,6 +29,7 @@ export default function RootLayout({
         <ClerkProvider appearance={{variables:{colorPrimary:'#fe5933'}}}>
         <Navbar/>
         {children}
+        <Analytics />
         </ClerkProvider>
         </body>
     </html>
